@@ -19,7 +19,30 @@ Overall, we can see that the algorithm performanced was tied to the portfolio pe
 ![Decorative image.](Images/Returns_Algo.png)
 
 
-##
+## Training Window Tuning
+In the below three analysis, you will find the impact to the algorithm when there was a change or tuning to the DateOffset or the SMA timeline, and at what timeline the algorithm performed best.
+
+
+## DateOffset Increased to 6 Months From 3 Months
+In the original analysis the DateOffset is set at 3 months, so for further analysis and understanding of the algorithm, the timeline was expanded to 6 months. The result of the algorithm performance can be found in the graph below.
+
+The impact was a lower performance for the algorithm. As seen in the graph below, the algorithm underperformed the portfolio actual returns for a longer timeline, and overperformed for shorter timeline. This led for the algorithm to have a lower timeline and ability to learn from the data and have better returns for a long period of time.
+
+![Decorative image.](Images/6Month_Analysis.png)
+
+## SMA Doubled for both Short-Term & Long-Term
+In the original analysis the SMA for short-term was set at 4 and long-term SMA at 100. For this next analysis I decided to double both the short-term SMA and long-term SMA to 8 and 200 respectively. The result of the algorithm performance in comparison with portfolio actual returns can be found in the graph below.
+
+By doubling the SMA we found that the algorithm was never able to outperformed the portfolio actual returns. This was a concequence of the algorithm  viewing bigger chunks of the data rather than smaller chunks in order to learn from the data and change its strategy to better performed. This notes that the algorithm will better performed with a lower SMA.
+
+![Decorative image.](Images/SMA_Increased.png)
+
+## Decreased in SMA and DateOffset for Best Algo Performance
+By decreasing both the SMA and DateOffset, the best perfoming algorithm is the result of an adjusted SMA and DateOffset.
+
+As seen in the graph below, with these parameters the algorithm is able to outperformed the portfolio actual returns for an extended period of time. This was a capability when an algorithm is able to read the data accurately and therefore be able to adjust quicker in order to outperformed the portfolio actual returns for the remaining timeline of the dataset.
+
+![Decorative image.](Images/SMA_DateOffset_Decreased.png)
 
 ## What You're Creating
 
